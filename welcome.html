@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selamat Datang!</h1>
+        <p>Apakah Anda Admin atau Konsumen?</p>
+        
+        <form action="#">
+            <!-- Jika Admin dipilih, halaman login akan dipanggil -->
+            <button type="button" class="btn" onclick="window.location.href='login.html'">Admin</button>
+            
+            <!-- Jika Konsumen dipilih, halaman dashboard Konsumen akan dipanggil -->
+            <button type="button" class="btn" onclick="window.location.href='dashboardKonsumen.html'">Konsumen</button>
+        </form>
+    </div>
+
+</body>
+</html>
